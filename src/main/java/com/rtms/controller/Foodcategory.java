@@ -33,4 +33,16 @@ public class Foodcategory {
 		JSONObject data = foodCategoryService.addFoodCategory(json.get("categoryName").toString());
 		return new ResponseEntity<Response>(new Response(data.toMap()),HttpStatus.OK);
 	}
+
+	@GetMapping("getFoodItem")
+	public ResponseEntity<Response> getFooditem(){
+		JSONObject data = foodCategoryService.getFooditems();
+		return new ResponseEntity<Response>(new Response(data.toMap()),HttpStatus.OK);
+	}
+	
+	@PostMapping("addFooditem")
+	public ResponseEntity<Response> addFoodItem(@RequestBody  Map<String, Object> json){
+		JSONObject data = foodCategoryService.addFooditem(json.get("itemName").toString(),(Integer)json.get("categoryId"));
+		return new ResponseEntity<Response>(new Response(data.toMap()),HttpStatus.OK);
+	}
 }
