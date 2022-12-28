@@ -61,6 +61,7 @@ public class Employee {
 	
 	
 	//Designation
+	
 	@PostMapping("addDesignation")
 	public ResponseEntity<Response> addDesignation(@RequestBody  Map<String, Object> json){
 		JSONObject data = employeeService.addDesignation(json.get("designationName").toString(),json.get("designationSalary").toString());

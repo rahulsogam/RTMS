@@ -15,6 +15,32 @@ CREATE TABLE Employee (
 	designationID int FOREIGN KEY REFERENCES Designation(designationID),                                                                                                                                                                  
 );
 
+Create Table Reciepes(
+	id int NOT NULL PRIMARY KEY IDENTITY(1,1),
+	employeeID int FOREIGN KEY REFERENCES Employee(employeeID),  
+	reciepeName varchar(255),
+	ingredients xml,
+	steps xml
+);
+
+--Insert Data from XML file to table
+insert into Reciepes
+Select
+A.reciepe.query('employeeID').value('.','int') as ChiefID,
+A.reciepe.query('reciepeName').value('.','varchar(50)') as reciepeName,
+A.reciepe.query('ingredients/ingredient') as ingredients,
+A.reciepe.query('steps/step') as steps
+
+from 
+(
+select cast(r as xml) from
+openrowset(bulk 'C:\Users\SARVESH\Documents\Documents\Advance Database\RTMS\Reciepe.xml', single_blob) as R(r)
+) as S(r)
+
+cross apply r.nodes('chefSpecialReciepes/reciepe') as A(reciepe)
+
+
+
 --Views
 
 Create or Alter View Employee_Details as Select e.employeeID,e.firstName, e.lastName, e.address,e.city ,e.phoneNo,d.designationSalary, d.designationName from Employee e INNER JOIN Designation d ON e.designationID = d.designationID;
@@ -61,4 +87,19 @@ update Designation set designationSalary=@designationSalary where designationID 
 
 CREATE or ALTER PROCEDURE deleteDesignation @designationID int
 AS
-delete from Designation where designationID=@designationID
+delete from Designation where designationID=@designationID;
+
+
+--Reciepes
+
+CREATE or ALTER PROCEDURE getReciepesXml
+AS
+Select r.reciepeName,r.employeeID,r.ingredients.query('ingredient') as ingridients, r.steps.query('step') as steps from Reciepes r;
+
+exec getReciepesXml;
+
+CREATE or ALTER PROCEDURE getReciepes
+AS
+Select r.reciepeName,r.employeeID,r.ingredients.query('ingredient').value('.','varchar(500)') as ingridients, r.steps.query('step').value('.','varchar(500)') as steps from Reciepes r;
+
+exec getReciepes;
