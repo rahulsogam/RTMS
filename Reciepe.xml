@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<chefSpecialReciepes>
+<reciepe>
+<employeeID>2</employeeID>
+<reciepeName>Chef's Special Pizza</reciepeName>
+<ingredients>
+<ingredient>300g strong bread flour, </ingredient>
+<ingredient>1 tsp instant yeast, </ingredient>
+<ingredient>1 tsp salt, </ingredient>
+<ingredient>100ml passata, </ingredient>
+<ingredient>1 garlic clove, </ingredient>
+<ingredient>125g ball mozzarella, </ingredient>
+<ingredient>handful grated or shaved parmesan, </ingredient>
+<ingredient>handful of basil leaves, </ingredient>
+</ingredients>
+<steps>
+<step>Step1 Make the base: Put the flour into a large bowl, then stir in the yeast and salt. Make a well, pour in 200ml warm water and the olive oil and bring together with a wooden spoon until you have a soft, fairly wet dough. Turn onto a lightly floured surface and knead for 5 mins until smooth. Cover with a tea towel and set aside. You can leave the dough to rise if you like, but its not essential for a thin crust.</step>
+<step>Step2 Make the sauce: Mix the passata, basil and crushed garlic together, then season to taste. Leave to stand at room temperature while you get on with shaping the base.</step>
+<step>Step3 Roll out the dough: if you have let the dough rise, give it a quick knead, then split into two balls. On a floured surface, roll out the dough into large rounds, about 25cm across, using a rolling pin. The dough needs to be very thin as it will rise in the oven. Lift the rounds onto two floured baking sheets.</step>
+<step>Step4 Top and bake: heat the oven to 240C/220C fan/gas 8. Put another baking sheet or an upturned baking tray in the oven on the top shelf. Smooth sauce over bases with the back of a spoon. Scatter with cheese and tomatoes, drizzle with olive oil and season. Put one pizza, still on its baking sheet, on top of the preheated sheet or tray. Bake for 8-10 mins until crisp. Serve with a little more olive oil, and basil leaves if using. Repeat step for remaining pizza.</step>
+</steps>
+</reciepe>
+<reciepe>
+<employeeID>2</employeeID>
+<reciepeName>Burger</reciepeName>
+<ingredients>
+<ingredient>1 small onion, </ingredient>
+<ingredient>500g good-quality beef mince, </ingredient>
+<ingredient>1 egg, </ingredient>
+<ingredient>1 tbsp vegetable oil, </ingredient>
+<ingredient>4 burger buns, </ingredient>
+</ingredients>
+<steps>
+<step>Step1: Tip 500g beef mince into a bowl with 1 small diced onion and 1 egg, then mix. </step>
+<step>Step2: Divide the mixture into four. Lightly wet your hands. Carefully roll the mixture into balls, each about the size of a tennis ball. </step>
+<step>Step3: Set in the palm of your hand and gently squeeze down to flatten into patties about 3cm thick. Make sure all the burgers are the same thickness so that they will cook evenly. </step>
+<step>Step4: Put on a plate, cover with cling film and leave in the fridge to firm up for at least 30 mins. </step>
+<step>Step5: Cook for 5 mins more for medium. If you like your burgers pink in the middle, cook 1 min less each side. For well done, cook 1 min more. </step>
+<step>Step6: Take the burgers off the barbecue. Leave to rest on a plate so that all the juices can settle inside. </step>
+</steps>
+</reciepe>
+<reciepe>
+<employeeID>2</employeeID>
+<reciepeName>French Fries</reciepeName>
+<ingredients>
+<ingredient>1kg Maris Piper or King Edward potatoes, </ingredient>
+<ingredient>vegetable oil, for deep frying</ingredient>
+</ingredients>
+<steps>
+<step>Step1: Peel the potatoes and cut into 1cm-thick batons. Put into a bowl of cold water and leave to soak for at least 2 hrs to remove the starch from the potatoes this will help them crisp while frying.. </step>
+<step>Step2: Drain the potatoes well and pat dry with kitchen paper. Fill a deep pan no more than a third full with oil and heat to 140C, or until a cube of bread dropped in browns in 60 seconds. </step>
+<step>Step3:Turn the heat up until the oil reaches 180C, or a cube of bread browns in 30 seconds. Fry the French fries again for 2-3 mins per batch until lightly golden and really crisp. </step>
+</steps>
+</reciepe>
+</chefSpecialReciepes>
